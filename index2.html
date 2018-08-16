@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GOOGLE</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="search-box-wrapper">
+		<input placeholder="Google Search..." type="text" class="search-box-input" name="">
+		<button class="search-box-input" type="Google">&#128269;</button>		
+	</div>
+
+	<button type="Go back"><a href="index.html" >Main Page</a></button>
+
+	<div id="map">
+		
+	</div>
+
+
+
+	<script type="text/javascript">
+		
+		function initMap(){
+			var location = {lat: 40.712775, lng: -74.005973};
+			var map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 10,
+				center: location
+				
+			});
+		}
+
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD511XYfJADEmA40KMgejntXlFPW6qvjIQ&callback=initMap">	
+	</script>
+
+
+
+
+
+</body>
+</html>
